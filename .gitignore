@@ -9,11 +9,9 @@ lib-cov
 *.yo-rc.json
 *.editorconfig
 *.sublime-*
-
 pids
 logs
 results
-
 npm-debug.log
 node_modules
 build

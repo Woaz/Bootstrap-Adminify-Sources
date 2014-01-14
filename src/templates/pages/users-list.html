@@ -4,7 +4,22 @@ slug: users-list
 parent: users
 lead: Some additonal text
 icon: users
+author:
+  1: !!map
+    id: 1
+    name: New User
+    class: btn-info
+    icon: plus
+  2: !!map
+    id: 2
+    name: New Group
+    class: btn-info
+    icon: plus
 ---
 
 <h1> {{{ uppercase title }}} </h1>
 <p class="lead"> {{{ lead }}} </p>
+
+{{#each author}}
+	ID: {{id}} - Name: {{name}}
+{{/each}}
