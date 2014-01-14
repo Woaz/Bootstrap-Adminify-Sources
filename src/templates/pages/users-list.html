@@ -4,22 +4,22 @@ slug: users-list
 parent: users
 lead: Some additonal text
 icon: users
-author:
+button:
   1: !!map
-    id: 1
     name: New User
-    class: btn-info
+    color: primary
+    size: sm
     icon: plus
   2: !!map
-    id: 2
     name: New Group
-    class: btn-info
+    color: danger
+    size: sm
     icon: plus
 ---
 
 <h1> {{{ uppercase title }}} </h1>
 <p class="lead"> {{{ lead }}} </p>
 
-{{#each author}}
-	ID: {{id}} - Name: {{name}}
+{{#each button}}
+	 Name: {{name}}
 {{/each}}

@@ -5,9 +5,15 @@
 	<!-- Buttons -->
 	<div class="pull-right">
   
-  		<a href="#" class="btn btn-primary btn-sm" role="button">Button 1</a>
-  		<a href="#" class="btn btn-danger btn-sm" role="button">Button 2</a>
-
+  		{{#if button}}
+  			{{#each button}}
+	 			<a href="#" class="btn btn-{{color}} btn-{{size}}" role="button">
+	 				{{#if icon}}<span class="fa fa-{{icon}}"></span>{{/if}}
+	 				{{name}}
+	 			</a>
+			{{/each}}
+  		{{/if}}
+  		
 	</div>
 
 	<div class="clearfix"></div>
