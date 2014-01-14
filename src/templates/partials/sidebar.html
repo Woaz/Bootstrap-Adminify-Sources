@@ -1,0 +1,28 @@
+<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+  
+  <ul class="nav nav-pills nav-stacked nav-adminify">
+    <li {{#is slug "dashboard"}}class="active"{{/is}}><a href="dashboard.html"><i class="fa fa-dashboard"></i>&nbsp;Dashboard</a></li>
+    <li {{#is slug "charts"}}class="active"{{/is}}><a href="charts.html"><i class="fa fa-bar-chart-o"></i>&nbsp;Charts</a></li>
+    <li class="dropdown {{#is parent 'users'}}has_active{{/is}}">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <i class="fa fa-users"></i>&nbsp;Users <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li {{#is slug "users-list"}}class="active"{{/is}}><a href="users-list.html">List all</a></li>
+        <li {{#is slug "users-add"}}class="active"{{/is}}><a href="users-add.html">Add User</a></li>
+        <li {{#is slug "users-detail"}}class="active"{{/is}}><a href="users-detail.html">User Details</a></li>
+      </ul>
+    </li>
+    <li class="dropdown {{#is parent 'forms'}}has_active{{/is}}">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <i class="fa fa-pencil"></i>&nbsp;Forms <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li {{#is slug "form-default"}}class="active"{{/is}}><a href="forms-default.html">Default Forms</a></li>
+        <li {{#is slug "form-wizard"}}class="active"{{/is}}><a href="forms-wizard.html">Wizards</a></li>
+      </ul>
+    </li>
+    <li {{#is slug "calendar"}}class="active"{{/is}}><a href="calendar.html"><i class="fa fa-calendar"></i>&nbsp;Calendar</a></li>
+    <li {{#is slug "tables"}}class="active"{{/is}}><a href="tables.html"><i class="fa fa-table"></i>&nbsp;Tables</a></li>
+  </ul> 
+</div>
