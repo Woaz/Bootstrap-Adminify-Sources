@@ -2,8 +2,10 @@
 <script src="{{assets}}/js/bootstrap.min.js"></script>
 <script src="{{assets}}/js/classie.js"></script>
 <script src="{{assets}}/js/bootstrap-navigation.js"></script>
-<script src="{{assets}}/js/raphael/raphael-min.js"></script>
-<script src="{{assets}}/js/morris/morris-min.js"></script>
-<script src="{{assets}}/js/morris/chart-data-morris.js"></script>
-<script src="{{assets}}/js/tablesorter/jquery.tablesorter.js"></script>
-<script src="{{assets}}/js/tablesorter/tables.js"></script>
+
+
+{{#if asset}}
+	{{#each asset.js}}
+		<script src="{{assets}}/js/{{src}}.js"></script>
+	{{/each}}
+{{/if}}

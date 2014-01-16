@@ -105,6 +105,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('assemble-less');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.registerTask('server', [
     'clean',

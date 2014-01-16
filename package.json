@@ -28,7 +28,12 @@
     "grunt-contrib-watch": "~0.5.3",
     "load-grunt-tasks": "~0.2.1",
     "time-grunt": "~0.2.7",
-    "grunt-contrib-copy": "~0.5.0"
+    "grunt-contrib-copy": "~0.5.0",
+    "assemble-less": "~0.7.0",
+    "compass": "~0.1.0",
+    "jshint": "~2.4.1",
+    "watch": "~0.8.0",
+    "grunt-contrib-jshint": "~0.8.0"
   },
   "licenses": [
     {
